@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Calligraffitti&family=Open+Sans:ital,wght@0,300;1,300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-image: linear-gradient(
+    45deg,
+    rgb(65, 88, 208) 0%,
+    rgb(200, 80, 192) 50%,
+    rgb(255, 204, 112) 100%
+  );
+  font-family: "Poppins";
+}
+
+.send {
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  background: white;
+  padding: 20px 40px;
+  font-size: 25px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgb(0, 0, 0, 0.6);
+}
+
+.modal_in {
+  width: 400px;
+  position: relative;
+  top: 50%;
+  margin: auto;
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.modal_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #e26e70;
+}
+
+.modal_body {
+  padding: 15px;
+}
+
+.modal_body h2 {
+  color: #e26e70;
+  margin-bottom: 10px;
+}
+
+.modal_footer {
+  padding: 20px;
+  text-align: right;
+}
+
+.close {
+  border: none;
+  outline: none;
+  background: #e26e70;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 25;
+  color: white;
+  cursor: pointer;
+}
+
+.send:hover {
+  background: rgb(255, 255, 255, 0.8);
+}
+
+.hide {
+  display: none;
+}
+
+.modal_head i {
+  cursor: pointer;
+}
